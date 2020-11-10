@@ -1,5 +1,6 @@
 //=require jquery/dist/jquery.js
 //=require slick-carousel/slick/slick.js
+//=require @fancyapps/fancybox/dist/jquery.fancybox.js
 
 $(document).ready(function () {
   $(".js-open-menu-btn").on("click", function () {

@@ -1,0 +1,126 @@
+.achievements {
+  padding: 110px 0;
+  padding-bottom: 0;
+  position: relative;
+  background-color: $color1;
+  .container {
+    max-width: 1320px;
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    content: "";
+    right: 0;
+    transform: translateY(-50%);
+    height: 840px;
+    width: 280px;
+    background-image: url("../img/achieve-logo.svg");
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 10%;
+    &.color3 {
+      width: 180px;
+      height: 180px;
+      top: 0;
+      left: 50%;
+      transform: translateY(-50%);
+    }
+    &.blured {
+      width: 150px;
+      height: 150px;
+      bottom: 0;
+      top: unset;
+      left: 25%;
+      transform: translateY(50%);
+    }
+  }
+}
+
+.achieve-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-230px);
+
+  .section-title {
+    color: #fff;
+    text-align: left;
+    font-size: 110px;
+    max-width: 65%;
+    line-height: 1;
+  }
+}
+
+.achieve-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transform: translateY(-250px);
+  position: relative;
+  .content-tops {
+    width: 65%;
+    .top__item {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background-image: url("../img/circle-dot.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-child(1) {
+        top: 0;
+        h4 {
+          margin-bottom: 15px;
+        }
+      }
+
+      &:nth-child(2) {
+        top: 0;
+        transform: translate(95%, -50%);
+      }
+      &:nth-child(3) {
+        transform: translate(95%, calc(-45% - 150px));
+      }
+
+      .img-wrapper {
+        margin-left: -30px;
+      }
+      h4 {
+        margin-left: -30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      span {
+        &:nth-of-type(1) {
+          color: $color2;
+          font-size: 72px;
+        }
+        &:nth-of-type(2) {
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  p {
+    width: 33%;
+    padding-top: 150px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #fff;
+  }
+}

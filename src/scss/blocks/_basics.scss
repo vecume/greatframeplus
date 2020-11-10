@@ -10,6 +10,7 @@ body {
   font-family: "Cera Round Pro", "Roboto", sans-serif;
   color: $text-color;
   overflow-x: hidden;
+  background-color: #fcfcfc;
 }
 
 button {
@@ -84,8 +85,9 @@ img {
 }
 
 .bordered-text {
+  font-weight: 900;
   color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: $color3;
 }
 
@@ -106,13 +108,18 @@ img {
   position: absolute;
   width: 195px;
   height: 195px;
-  background: #ed0677;
+  background-color: #ed0677;
   border-radius: 50%;
   z-index: 0;
-}
-
-.blured {
-  filter: blur(35px);
+  &.color3 {
+    background-color: $color3;
+  }
+  &.color2 {
+    background-color: $color2;
+  }
+  &.blured {
+    filter: blur(35px);
+  }
 }
 
 .scroll-down {

@@ -1,5 +1,6 @@
 @import "fonts";
 @import "vars";
+@import "./../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
 @import "./blocks/normalize";
 @import "./blocks/preloader";
 @import "./blocks/basics";
@@ -8,3 +9,5 @@
 @import "./blocks/footer";
 @import "./blocks/about";
 @import "./blocks/achievements";
+@import "./blocks/video";
+@import "./blocks/awards";

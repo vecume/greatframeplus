@@ -1,0 +1,19 @@
+.video {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/video-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .video-link {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+}
