@@ -13884,6 +13884,15 @@ return jQuery;
 }));
 
 
+$(document).ready(function () {
+  $(".js-open-menu-btn").on("click", function () {
+    $("#main-menu").addClass("active");
+  });
+  $(".js-close-menu-btn").on("click", function () {
+    $("#main-menu").removeClass("active");
+  });
+});
+
 $(window).on("load", function () {
   $(".preloader").fadeOut();
 });

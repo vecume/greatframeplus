@@ -1,0 +1,117 @@
+.about {
+  padding-top: 200px;
+}
+
+.about-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-top {
+  background-image: url("../img/circles.svg");
+  background-size: 80%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 150px;
+}
+
+.about-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+
+  .scroll-down {
+    left: 55%;
+    bottom: 0;
+    transform: translateY(70%);
+  }
+}
+
+.info-yearbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.info-content {
+  width: 50%;
+  p {
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .circle {
+    transform: translateY(-70%) translateX(100%);
+  }
+}
+
+.year-box {
+  .img-wrapper {
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  span {
+    color: $color3;
+    display: block;
+    text-align: right;
+    font-size: 22px;
+    &:nth-of-type(1) {
+      font-size: 64px;
+      margin-bottom: -25px;
+    }
+  }
+}
+
+.with-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 200px;
+
+  .triangle-box {
+    top: 0;
+    left: 48%;
+  }
+
+  .flower-box {
+    right: -7%;
+    top: 50%;
+  }
+
+  .bg-img {
+    height: 850px;
+    border-radius: 50px 0px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .img-side {
+    width: 47%;
+    position: relative;
+  }
+
+  .hero-img {
+    top: 30px;
+    transform: translateX(16%);
+    position: absolute;
+  }
+
+  .text-side {
+    width: 50%;
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.9;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.main-footer {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: $color1;
+}
+
+.footer-inner {
+  & > .img-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+.footer-nav-wrapper {
+  justify-content: center;
+  margin-bottom: 50px;
+  li {
+    margin: 0 25px;
+  }
+  a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.footer-bottom {
+  padding-top: 35px;
+  border-top: 2px solid #fff;
+  justify-content: space-between;
+  .social-link {
+    display: flex;
+    li {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+}
