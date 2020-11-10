@@ -35,13 +35,14 @@ let { src, dest } = require("gulp"),
   cleanCss = require("gulp-clean-css"),
   sourcemaps = require("gulp-sourcemaps"),
   include = require("gulp-include"),
-  ttf2woff = require("gulp-ttf2woff"),
-  ttf2woff2 = require("gulp-ttf2woff2");
-// webp = require("gulp-webp"),
-// webphtml = require("gulp-webp-html");
-// webpcss = require("gulp-webpcss");
-// imagemin = require("gulp-imagemin"),
-// fileInclude = require("gulp-file-include");
+  // ttf2woff = require("gulp-ttf2woff"),
+  // ttf2woff2 = require("gulp-ttf2woff2");
+  // webp = require("gulp-webp"),
+  // webphtml = require("gulp-webp-html");
+  // webpcss = require("gulp-webpcss");
+  // imagemin = require("gulp-imagemin"),
+  fileInclude = require("gulp-file-include"),
+  htmlmin = require("gulp-htmlmin");
 
 function browserSync() {
   browsersync.init({
@@ -56,8 +57,9 @@ function browserSync() {
 function html() {
   return (
     src(path.src.html)
-      // .pipe(fileInclude()) to collect html sections
+      .pipe(fileInclude()) //to collect html sections
       // .pipe(webphtml())
+      .pipe(htmlmin({ collapseWhitespace: true })) //minimize html
       .pipe(dest(path.build.html))
       .pipe(browsersync.stream())
   );
@@ -122,8 +124,14 @@ function images() {
 }
 
 function fonts() {
-  src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
-  return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
+  src(path.src.fonts)
+    // .pipe(ttf2woff())
+    .pipe(dest(path.build.fonts));
+  return (
+    src(path.src.fonts)
+      // .pipe(ttf2woff2())
+      .pipe(dest(path.build.fonts))
+  );
 }
 
 function clean() {
