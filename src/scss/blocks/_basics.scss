@@ -149,3 +149,18 @@ img {
   background-repeat: no-repeat;
   z-index: -1;
 }
+
+.slide-controllers {
+  z-index: 10;
+  margin-top: 20px;
+  max-width: 230px;
+  button {
+    width: 80px;
+    height: 80px;
+    background-color: $color3;
+    border-radius: 50%;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

@@ -19523,6 +19523,29 @@ $(document).ready(function () {
   $(".js-close-menu-btn").on("click", function () {
     $("#main-menu").removeClass("active");
   });
+
+  $(".js-awards-slider").slick({
+    rows: 0,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    dots: false,
+    nextArrow: ".js-awards-next",
+    prevArrow: ".js-awards-prev",
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 451,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
 });
 
 $(window).on("load", function () {

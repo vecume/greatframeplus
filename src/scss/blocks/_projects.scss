@@ -1,0 +1,42 @@
+@import "./project-item";
+
+.projects-block {
+  background-color: $color1;
+  padding: 120px 0;
+  position: relative;
+
+  &::after {
+    height: 600px;
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url("../img/award-bottom.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .section-sec-title {
+    color: #fff;
+    margin-bottom: 100px;
+  }
+
+  .all-projects-link {
+    position: relative;
+    z-index: 2;
+    font-size: 13px;
+    max-width: 230px;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 30px 65px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 auto;
+  }
+}
