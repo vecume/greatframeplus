@@ -10,7 +10,14 @@
       "prof":"Автор идеи проекта Дракоша Тоша",
       "img":"nina.png"
     })
-  </div>
+    @@if(isBlock === "false") {
+      @@include('./team-member.html', {
+        "name":"Амелия Ли",
+        "prof":"Автор идеи проекта Дракоша Тоша",
+        "img":"ameliya.png"
+      })
+    }
+   </div>
   <div class="vertical-text bordered-text">great frame</div>
   <div class="right">
     @@include('./team-member.html', {
@@ -23,5 +30,12 @@
       "prof":"Автор идеи проекта Дракоша Тоша",
       "img":"sergey.png"
     })
+    @@if(isBlock === "false") {
+      @@include('./team-member.html', {
+        "name":"Андрей Резин",
+        "prof":"Автор идеи проекта Дракоша Тоша",
+        "img":"andrey.png"
+      })
+    }
   </div>
 </div>
