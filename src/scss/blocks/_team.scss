@@ -1,62 +1,86 @@
-#team {
-  &::before {
-    background: {
-      image: url("../img/team-bg.png");
-      position: center center;
-    }
-  }
+@import "./team-member";
 
-  .section-img {
-    right: 225px;
-    display: inline-block;
+.team {
+  position: relative;
+  z-index: 3;
+  padding: 110px 0;
+  background-image: url("../img/team-bg.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  .container {
+    max-width: 1320px;
   }
-  .section-content {
-    max-width: 350px;
-    margin-top: 100px;
-  }
-  .play-btn {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 54%;
-    left: 180px;
-    background-color: #fff;
-    border-radius: 50%;
-  }
-}
+  .section-top-content {
+    width: 50%;
+    position: relative;
 
-@media (max-width: $breakpoint-d) {
-  #team {
-    .play-btn {
-      width: 100px;
-      height: 100px;
-      top: 53%;
-      left: 65px;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-m) {
-  #team {
-    .play-btn {
-      width: 75px;
-      height: 75px;
-      top: unset;
-      bottom: 120px;
-      left: 130px;
-    }
-    .section-content {
-      margin-left: 0 !important;
-      max-width: 192px;
-      margin-top: 180px;
-      p {
-        height: 125px;
-        overflow: hidden;
-      }
-    }
-    .section-img {
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 50px;
+      display: block;
+      width: 140px;
+      height: 140px;
+      content: "+";
       display: flex;
-      align-items: flex-end;
+      color: $color3;
+      font-size: 64px;
+      font-weight: bolder;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $color3;
+      border-radius: 50%;
+      z-index: -1;
     }
+  }
+  .section-top {
+    margin-bottom: 70px;
+    .img-wrapper {
+      position: absolute;
+      right: 10%;
+      top: 0;
+      transform: translateY(-40%);
+    }
+    .section-title {
+      text-align: left;
+      line-height: 0.8;
+      margin-bottom: 60px;
+    }
+    p {
+      font-size: 16px;
+      font-family: $ff2;
+      width: 60%;
+      line-height: 1.6;
+    }
+  }
+  .filled-link {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+
+    margin-top: 30px;
+  }
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+
+  .vertical-text {
+    position: absolute;
+    transform-origin: 0 0;
+    left: 50%;
+    transform: rotate(90deg) translateY(-50%);
+    font-size: 144px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color2;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .right {
+    transform: translateY(-200px);
   }
 }

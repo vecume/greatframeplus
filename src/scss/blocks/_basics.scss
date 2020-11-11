@@ -164,3 +164,13 @@ img {
     }
   }
 }
+
+.filled-link {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 30px 70px;
+  background-color: $color2;
+  border-radius: 100px;
+  color: #fff;
+  text-transform: uppercase;
+}

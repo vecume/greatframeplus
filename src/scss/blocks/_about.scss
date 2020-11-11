@@ -1,7 +1,9 @@
 .about {
-  position: relative;
-  z-index: 3;
   padding-top: 200px;
+  .container {
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .about-inner {

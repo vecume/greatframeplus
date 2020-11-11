@@ -24,16 +24,9 @@
     }
   }
 
-  .read-more-link {
-    font-size: 13px;
-    font-weight: 700;
-    padding: 30px 70px;
-    background-color: $color2;
-    border-radius: 100px;
+  .filled-link {
     position: absolute;
     bottom: 0;
-    color: #fff;
-    text-transform: uppercase;
     right: 80px;
     transform: translateY(50%);
   }
@@ -54,7 +47,7 @@
   &.right {
     .inner-wrapper {
       flex-direction: row-reverse;
-      .read-more-link {
+      .filled-link {
         left: 80px;
         right: unset;
       }
