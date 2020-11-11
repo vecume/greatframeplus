@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreatFrame</title>
+    @@include('./html/favicon.html')
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="projects-body">
+    @@include('./html/menu.html')
+
+    <!-- preloader -->
+    @@include('./html/preloader.html')
+    <!-- header -->
+    @@include('./html/header.html')
+
+    <main>
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-top">
+            <div class="links-wrapper">
+              <a href="#" class="links__item">
+                <span class="img-wrapper">
+                  <img src="img/icons/game.svg" alt="game" />
+                </span>
+                <span>игры vr</span>
+              </a>
+              <a href="#" class="links__item active">
+                <span class="img-wrapper">
+                  <img src="img/icons/sword.svg" alt="sword" />
+                </span>
+                <span>мультсериалы</span>
+              </a>
+              <a href="#" class="links__item">
+                <span class="img-wrapper">
+                  <img src="img/icons/keyboard.svg" alt="keyboard" />
+                </span>
+                <span>паблишинг</span>
+              </a>
+            </div>
+            <div class="big-small-text">
+              <div class="big--text bordered-text">проекты</div>
+              <h1>проекты</h1>
+            </div>
+            <div class="projects-content">
+              <div class="img-wrapper">
+                <img src="img/icons/scroll-down.svg" alt="" />
+              </div>
+              <p>
+                Крупнейшие медиалицензиаты во всем мире: Disney Russia,
+                «Карусель», Мульт (+ обсуждается производство под Первый канал),
+                «Мульт в кино» в РФ, «Хабара» и РТРК «Казахстан» в Казахстане,
+                Беларусь 2/3, ВТВ, Белтелеком в Беларуси, ETV, Tespi в Эстонии,
+                Viasat в Литве, Fox Networks в Латинской Америке, Netflix, Amazon
+                Prime, Amazon Instant, iTunes, Google Play в США, TV3 в Испании,
+                RTP в Португалии, kiDS CAST в UK и Ирландии, TVP в Польше, ANTV в
+                Индонезии, Tencent Video в Китае, Tutk Telekom и Mikido TV в
+                Турции и др.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+    <!-- footer -->
+    @@include('./html/footer.html')
+    <script src="js/main.js"></script>
+  </body>
+</html>

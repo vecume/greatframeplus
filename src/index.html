@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-
     @@include('./html/menu.html')
 
     <!-- preloader -->
     @@include('./html/preloader.html')
     <!-- header -->
     @@include('./html/header.html')
+    <main>
+      <!-- about -->
+      @@include('./html/about.html')
 
-    <!-- about -->
-    @@include('./html/about.html')
+      <!-- achievements -->
+      @@include('./html/achievements.html')
 
-    <!-- achievements -->
-    @@include('./html/achievements.html')
+      <!-- video -->
+      @@include('./html/video.html')
 
-    <!-- video -->
-    @@include('./html/video.html')
+      <!-- awards -->
+      @@include('./html/awards.html')
 
-    <!-- awards -->
-    @@include('./html/awards.html')
+      <!-- projects-->
+      @@include('./html/projects-block.html')
 
-    <!-- projects-->
-    @@include('./html/projects-block.html')
-
-    <!-- team -->
-    @@include('./html/team-block.html');
+      <!-- team -->
+      @@include('./html/team-block.html');
+    </main>
     <!-- footer -->
     @@include('./html/footer.html')
     <script src="js/main.js"></script>
