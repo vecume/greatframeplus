@@ -21,6 +21,8 @@
   }
 
   .section-sec-title {
+    position: relative;
+    z-index: 2;
     color: #fff;
     margin-bottom: 100px;
   }

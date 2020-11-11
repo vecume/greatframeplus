@@ -174,3 +174,15 @@ img {
   color: #fff;
   text-transform: uppercase;
 }
+
+.big-text {
+  position: absolute;
+  font-size: 280px;
+  top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-text-stroke-color: #193fa0;
+}
